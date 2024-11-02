@@ -1,0 +1,33 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Reflection App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Daily Reflection</h1>
+  <form id="interview-form">
+    <label>1. What was the most significant thing you accomplished today?</label>
+    <textarea name="answer1" required></textarea>
+
+    <label>2. Did you face any challenges? How did you overcome them?</label>
+    <textarea name="answer2" required></textarea>
+
+    <label>3. What are you most proud of today?</label>
+    <textarea name="answer3" required></textarea>
+
+    <button type="submit">Generate Blog Post</button>
+  </form>
+
+  <div id="result" style="display:none;">
+    <h2>Your Blog Post</h2>
+    <div id="blog-post"></div>
+    <h2>Generated Image</h2>
+    <img id="blog-image" alt="Generated Image">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
